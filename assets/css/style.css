@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap");
+
+* {
+  font-family: "Montserrat", Roboto, Helvetica, sans-serif;
+}
+.skill-btn {
+  margin: 8px;
+}
+
+.img-overlay {
+  display: block;
+  position: relative;
+}
+
+.img-overlay::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 255, 0, 0.315);
+}
+
+.navbar-fixed .container {
+  height: 60px;
+}
+
+.clear-float {
+  clear: both;
+}
+
+.page-heading {
+  margin-top: -20px;
+}
+
+.carousel {
+  background-color: white;
+}
+
+/* Carousel display window */
+.my-carousel {
+  height: 380px;
+}
+
+.my-carousel-item {
+  min-height: 300px;
+  /* min-width: fit-content; */
+  min-width: 350px;
+  border-radius: 40px;
+}
+
+.my-carousel-item img {
+  height: 120px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.carousel .indicators {
+  margin-top: 10px;
+}
+
+.carousel .indicators li.indicator-item {
+  background-color: grey;
+}
+
+.carousel .indicators li.indicator-item.active {
+  background-color: lightgreen;
+}
+
+.card-panel {
+  width: 800;
+  margin-top: -30px;
+  background-color: rgb(0, 0, 0);
+  background-color: white;
+}
+
+.card-title {
+  margin: 4px 0;
+  color: red;
+}
+
+.card-sub-title {
+  color: green;
+}
+
+.heading-caption h5 {
+  padding: 100px;
+}
+
+.txt-upper {
+  text-transform: uppercase;
+}
+
+.carousel-item img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.my-skills-tab {
+  margin: 100px 0;
+}
+.my-skills-tab ul {
+  list-style-type: inherit;
+  font-weight: 700;
+}
+
+.my-skills-tab ul li {
+  color: #455a64;
+  list-style: initial;
+  list-style-type: square;
+}
+.my-skills-tab ul li a {
+  color: #455a64;
+  list-style: initial;
+  list-style-type: square;
+}
+
+.my-skills-tab .tabs .tab .active {
+  color: rgb(0, 195, 255);
+}
+
+#tech-skills li,
+#work-ex li,
+#credentials li,
+#others li {
+  margin-bottom: 8px;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  color: rgb(0, 195, 255);
+  /* tab heading color change when focused */
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background-color: #e6e6e644;
+  outline: none;
+}
+
+.tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  background-color: #455a643f;
+  will-change: left, right;
+  /* color: blue; */
+}
+
+#tech-skills ul,
+#work-ex ul,
+#credentials ul,
+#others ul {
+  padding: 20px;
+  /* background-color: #e6e6e644; */
+  font-weight: normal;
+}
+
+.skills-wrapper {
+  position: relative;
+}
+#tech-skills .skill-icons {
+  height: 170px;
+  width: 100%;
+  padding: 30px 0;
+  margin: 16px 0;
+  font-size: 5rem;
+  display: flex;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+}
+
+/* #tech-skills .skill-icons .i-box h6 {
+  color: #3c4d83;
+  margin-top: -1px;
+} 
+*/
+
+/* Styling to set left & right padding for brand logo  */
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    min-width: 220px;
+    padding: 0 1rem;
+  }
+}
