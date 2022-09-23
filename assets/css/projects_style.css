@@ -1,0 +1,28 @@
+/* /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap");
+
+* {
+  font-family: "Montserrat", Roboto, Helvetica, sans-serif;
+} */
+
+.showcase-grid-cards {
+  /* position: relative;   */
+  /* background-color: rgb(128, 128, 128); */
+  height: auto;
+}
+
+.showcase-grid-cards .card {
+  height: 600px;
+  max-height: fit-content;
+}
+
+.showcase-grid-cards .card .card-content {
+  min-height: 500px;
+}
+
+.showcase-grid-cards .card .card-content img {
+  min-height: 200px;
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}

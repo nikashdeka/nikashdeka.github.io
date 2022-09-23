@@ -1,0 +1,36 @@
+.resume-section .resume-header {
+  /* background-color: #607d8b; */
+  width: 100%;
+  display: flex;
+  /* align-items: flex-end; */
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+
+
+.resume-section .resume-header img {
+  width: 120px;
+}
+
+.resume-header-content a{
+  color: #607d8b;
+}
+
+.resume-body i {
+  position: relative;
+}
+.resume-body i::before {
+  position: absolute;
+  color: #607d8b;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.list-styling li {
+  padding-bottom: 16px;
+}
+.certification-items ul li a {
+  color: #607d8b;
+  margin-left: 8px;
+}
