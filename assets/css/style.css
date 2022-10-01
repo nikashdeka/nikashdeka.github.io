@@ -158,6 +158,7 @@
 #credentials ul,
 #others ul {
   padding: 20px;
+  /* background-color: #e6e6e644; */
   font-weight: normal;
   color: #039be5;
 }
@@ -182,7 +183,7 @@
 }
 
 .i-box img{
-  /* max-width: 80px; */
+  max-width: 80px;
   height: 50px;
   border: 1px solid rgb(236, 234, 234);
   object-fit: cover;
