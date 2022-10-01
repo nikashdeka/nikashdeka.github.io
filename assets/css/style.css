@@ -51,8 +51,8 @@
 .my-carousel-item {
   min-height: 300px;
   /* min-width: fit-content; */
-  min-width: 320px;
-  border-radius: 50%;
+  min-width: 300px;
+  border-radius: 4%;
 }
 
 .my-carousel-item img {
@@ -167,25 +167,35 @@
   position: relative;
 }
 #tech-skills .skill-icons {
-  height: 170px;
+  /* height: 170px; */
   width: 100%;
   padding: 30px 0;
   margin: 16px 0;
   font-size: 5rem;
   display: flex;
-  justify-content: space-around;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center
 }
-.skill-icons{
-  display: flex;
-  flex-wrap: wrap;
+.skill-icons {
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 24px;
+}
+.i-box{
+  display:block;
+  /* flex-flow: row wrap; */
 }
 
-.i-box img{
-  max-width: 80px;
-  height: 50px;
+.i-box img {
+  max-width: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  padding: 2px;
   border: 1px solid rgb(236, 234, 234);
+  box-shadow: 2px 8px #888888;
+  border-radius: 8px;
   object-fit: cover;
 }
 /* Styling to set left & right padding  */
