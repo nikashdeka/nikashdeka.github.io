@@ -1,9 +1,13 @@
+// 
+
 $(document).ready(function () {
   // Tooltipped 
   $('.tooltipped').tooltip();
   // 
   $(".carousel").carousel({
     indicators: true,
+    duration: 100,
+    shift: 1,
   });
   $(".tabs").tabs({
     indicators: true,

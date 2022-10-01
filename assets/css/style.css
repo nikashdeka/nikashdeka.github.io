@@ -3,6 +3,11 @@
 * {
   font-family: "Montserrat", Roboto, Helvetica, sans-serif;
 }
+
+.btn-small {
+  background-color: #42a5f5;
+}
+
 .skill-btn {
   margin: 8px;
 }
@@ -46,8 +51,8 @@
 .my-carousel-item {
   min-height: 300px;
   /* min-width: fit-content; */
-  min-width: 350px;
-  border-radius: 40px;
+  min-width: 320px;
+  border-radius: 50%;
 }
 
 .my-carousel-item img {
@@ -153,10 +158,8 @@
 #credentials ul,
 #others ul {
   padding: 20px;
-  /* background-color: #e6e6e644; */
   font-weight: normal;
   color: #039be5;
-  
 }
 
 .skills-wrapper {
@@ -173,17 +176,59 @@
   -webkit-justify-content: space-around;
   -moz-justify-content: space-around;
 }
+.skill-icons{
+  display: flex;
+  flex-wrap: wrap;
+}
 
-/* #tech-skills .skill-icons .i-box h6 {
-  color: #3c4d83;
-  margin-top: -1px;
-} 
-*/
-
-/* Styling to set left & right padding for brand logo  */
+.i-box img{
+  /* max-width: 80px; */
+  height: 50px;
+  border: 1px solid rgb(236, 234, 234);
+  object-fit: cover;
+}
+/* Styling to set left & right padding  */
+/* for brand logo  */
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
     min-width: 220px;
     padding: 0 1rem;
   }
 }
+
+/* SHOWCASE GRID CARD CSS STARTS  */
+.showcase-grid-cards {
+  height: auto;
+}
+
+.showcase-grid-cards .card {
+  max-height: fit-content;
+}
+
+.showcase-grid-cards .card .card-content {
+  min-height: fit-content;
+  overflow: hidden;
+}
+
+.showcase-grid-cards .card .card-content img {
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: fill;
+  width: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+/* Image Grid Starts */
+.showcase-grid-cards .h-image-grid {
+  display: grid;
+  grid-gap: 12px 12px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.showcase-grid-cards .h-image-grid img {
+  width: 100%;
+}
+/* Image Grid Ends */
+
+/* SHOWCASE GRID CARD CSS ENDS  */
