@@ -36,10 +36,10 @@
 .navbar-fixed nav {
   background-color: #131415;
 }
-.navbar-fixed .container {
+/* .navbar-fixed .container {
   height: 60px;
   background-color: #131415;
-}
+} */
 .sidenav {
   background-color: #131415;
   background-image: url("/assets/images/Nikash_sm_transparent_circle.png");
