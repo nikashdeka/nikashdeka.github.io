@@ -49,10 +49,10 @@
 }
 
 .my-carousel-item {
-  min-height: 300px;
+  min-height: 310px;
   /* min-width: fit-content; */
   min-width: 300px;
-  border-radius: 4%;
+  border-radius: 2%;
 }
 
 .my-carousel-item img {
@@ -101,6 +101,33 @@
   max-width: 250px;
   max-height: 250px;
 }
+
+/* Product - Services Card */
+
+.vh-card {
+  min-height: 520px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+.card-content .desc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.card-content .short-desc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: wrap;
+}
+
+/* Skills Section */
 
 .my-skills-tab {
   margin: 100px 0;
@@ -173,18 +200,17 @@
   margin: 16px 0;
   font-size: 5rem;
   display: flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center
+  justify-content: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -moz-justify-content: space-evenly;
 }
 .skill-icons {
   flex-flow: row wrap;
   justify-content: space-around;
   gap: 24px;
 }
-.i-box{
-  display:block;
-  /* flex-flow: row wrap; */
+.i-box {
+  display: block;
 }
 
 .i-box img {
@@ -210,6 +236,13 @@
 /* SHOWCASE GRID CARD CSS STARTS  */
 .showcase-grid-cards {
   height: auto;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    66deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(66, 165, 245, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .showcase-grid-cards .card {
