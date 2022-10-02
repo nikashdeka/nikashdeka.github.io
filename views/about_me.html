@@ -31,41 +31,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
 
-  <body class="white" style="background: #f2f2f2">
+  <body class="white-text" style="background: #131415">
     <!-- Common Component for Every Page STARTS -->
     <header>
-      <!-- Nav Section STARTS -->
-      <div class="navbar-fixed">
-        <nav class="z-depth-0 white">
-          <div class="nav-wrapper container">
-            <a href="/index.html" class="brand-logo light-blue-text"
+      <!-- NAVBAR FIXED -->
+      <div class="navbar-fixed " >
+        <nav class="z-depth-0 ">
+          <div class="nav-wrapper container" >
+            <a
+              href="/index.html"
+              class="brand-logo light-blue-text"
               ><strong>Nikash Deka</strong></a
             >
             <a
               href="#"
               data-target="mobile-menu"
-              class="sidenav-trigger black-text"
+              class="sidenav-trigger white-text"
               ><i class="material-icons">menu</i></a
             >
             <ul class="right hide-on-med-and-down">
               <li>
-                <a class="black-text" href="/index.html">Home</a>
-              </li>
-              <li>
-                <a class="black-text" href="/views/projects.html">Projects</a>
-              </li>
-              <!-- <li>
-                <a
-                  class="black-text"
-                  href="/views/blogs/blogs.html"
-                  >Blogs</a
+                <a class="white-text" href="/index.html"
+                  >Home</a
                 >
-              </li> -->
-              <li>
-                <a class="black-text" href="/views/biodata.html">Biodata</a>
               </li>
               <li>
-                <a class="btn-small light-blue" href="/views/contact.html"
+                <a
+                  class="white-text"
+                  href="/views/projects.html"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  class="white-text"
+                  href="/views/about_me.html"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn-small light-blue"
+                  href="/views/contact.html"
                   >Let's Connect</a
                 >
               </li>
@@ -73,17 +80,23 @@
           </div>
         </nav>
       </div>
-
-      <ul class="sidenav" id="mobile-menu">
+      <!-- SIDENAV -->
+      <ul class="sidenav" id="mobile-menu" >
         <a href="/index.html" class="brand-logo">
-          <h5 class="light-blue-text pl-2"><strong>Nikash Deka</strong></h5>
+          <h5 class="pl-2"><strong>Nikash Deka</strong>
+          <h6 class="pl-2 ">Profile page</h6>
+          </h5>
         </a>
-        <li><a class="text-w5" href="/index.html">Home</a></li>
+        <li><a class="white-text" href="/index.html">Home</a></li>
         <li>
-          <a class="text-w5" href="/views/projects.html">Projects</a>
+          <a class="white-text" href="/views/projects.html"
+            >Projects</a
+          >
         </li>
         <li>
-          <a class="black-text" href="/views/biodata.html">Biodata</a>
+          <a class="white-text" href="/views/about_me.html"
+            >About Me</a
+          >
         </li>
         <li>
           <a
@@ -94,7 +107,6 @@
           >
         </li>
       </ul>
-      <!-- Nav Section ENDS -->
     </header>
 
     <!-- Page Heading STARTS -->
@@ -200,194 +212,206 @@
       <p>My strength is my parents, my wife, and my kid.</p>
     </article>
 
-    <!-- My Bio-Data TAB Section STARTS -->
-    <div class="my-skills-tab">
-      <div class="row container">
-        <div class="col s12">
-          <!-- Tabs mark-up  -->
-          <ul class="tabs">
-            <li class="tab col s12 m3">
-              <a class="active" href="#tech-skills">Tech Skills</a>
-            </li>
-            <li class="tab col s12 m3">
-              <a class="" href="#work-ex">Work-Ex</a>
-            </li>
-            <li class="tab col s12 m3">
-              <a class="" href="#credentials">Credentials</a>
-            </li>
-            <li class="tab col s12 m3">
-              <a class="" href="#others ">Others</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Tech-skills mark-up  -->
-        <div class="skills-warapper">
-          <div id="tech-skills" class="col s12">
-            <div class="grey-text skill-icons">
-              <div class="i-box center-align">
-                <img src="/assets/images/html.png" alt="" />
-                <h6>HTML5</h6>
-              </div>
-              <div class="i-box center-align">
-                <img src="/assets/images/css.png" alt="" />
-                <h6>CSS3</h6>
-              </div>
-              <div class="i-box center-align">
-                <img src="/assets/images/js.png" alt="" />
-                <h6>JavaScript</h6>
-              </div>
-              <div class="i-box center-align">
-                <img src="/assets/images/vue.png" alt="" />
-                <h6>Vue Js</h6>
-              </div>
-              <div class="i-box center-align">
-                <img src="/assets/images/flutter.png" alt="" />
-                <h6>Flutter</h6>
-              </div>
+    <!-- Section Skills Tab-Menu STARTS -->
+    <div class="row container skills-container pb-4">
+      <div class="section-caption center-align pb-4">
+          <!-- <h5 class="mt-4 pt-4 pb-2">TOOLBOX  <i class="fas fa-solid fa-toolbox small light-blue-text"></i>
+        </h5> -->
+      </div>
+        <!-- Skill TABS mark-up  -->
+      <div class="col s12 mt-2">
+        <ul class="tabs transparent">
+          <li class="tab col s12 m3">
+            <a class="active flow-text tooltipped" data-position="bottom" data-tooltip="Tech Skills" href="#tech-skills">Tech Skills</a>
+          </li>
+          <li class="tab col s12 m3">
+            <a class="flow-text tooltipped" data-position="bottom" data-tooltip="Work Experience" href="#work-ex">Work-Ex</a>
+          </li>
+          <li class="tab col s12 m3">
+            <a class="flow-text tooltipped" data-position="bottom" data-tooltip="Credentials & Certificates" href="#credentials">Credentials</a>
+          </li>
+          <li class="tab col s12 m3">
+            <a class="flow-text tooltipped" data-position="bottom" data-tooltip="Others" href="#others ">Others</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Tech-skills mark-up  -->
+      <div class="skills-warapper">
+        <div id="tech-skills" class="col s12">
+          <div class="grey-text skill-icons">
+            <div class="i-box center-align">
+              <img
+                class="responsive-img"
+                src="/assets/images/html.png"
+                alt=""
+              />
+              <h6 class="hide-on-small-only">HTML5</h6>
             </div>
-            <a
-              class="btn-small blue-grey white-text"
-              href="/views/my_projects.html"
-              >My Projects</a
-            >
+            <div class="i-box center-align">
+              <img
+                class="responsive-img"
+                src="/assets/images/css.png"
+                alt=""
+              />
+              <h6 class="hide-on-small-only">CSS3</h6>
+            </div>
+            <div class="i-box center-align">
+              <img
+                class="responsive-img"
+                src="/assets/images/js.png"
+                alt=""
+              />
+              <h6 class="hide-on-small-only">JavaScript</h6>
+            </div>
+            <div class="i-box center-align">
+              <img
+                class="responsive-img"
+                src="/assets/images/bootstrap.png"
+                alt=""
+              />
+              <h6 class="hide-on-small-only">Bootstrap</h6>
+            </div>
+           
+            <div class="i-box center-align p-4">
+              <img
+                class="responsive-img "
+                src="/assets/images/jquery.png"
+                alt=""
+              />
+              <h6 class="hide-on-small-only">jQuery</h6>
+            </div>
+            <div class="i-box center-align">
+              <img
+                class="responsive-img"
+                src="/assets/images/flutter.png"
+                alt=""
+              />
+              <h6 class="hide-on-small-only">Flutter</h6>
+            </div>
+            <div class="i-box center-align">
+              <img
+                class="responsive-img"
+                src="/assets/images/dart.png"
+                alt=""
+              />
+              <h6 class="hide-on-small-only">Dart</h6>
+            </div>
           </div>
-        </div>
-        <!-- Work-Ex mark-up -->
-        <div id="work-ex" class="col s12">
-          <ul>
-            <li>
-              <a href="">Ten (10) years of non-life insurance experience</a>
-            </li>
-            <li>
-              <a href="">Lead Retail, Bancassurance, and Corporate channels</a>
-            </li>
-            <li>
-              <a href=""
-                >Project Lead for developing IT platforms for online products
-                distribution</a
-              >
-            </li>
-            <li>
-              <a href=""
-                >Business Lead for Core system implementation and IT principles
-                to business</a
-              >
-            </li>
-            <li>
-              <a href=""
-                >Operational Process improvement and SOP implementation</a
-              >
-            </li>
-            <li>
-              <a href=""
-                >Lead teams, mentored, and managed their activities and
-                performance appraisals</a
-              >
-            </li>
-            <li>
-              <a href=""
-                >CHANNEL HEAD (COUNTRY), MNC Non-life Insurance Company</a
-              >
-            </li>
-            <li>
-              <a href=""
-                >NATIONAL SALES MANAGER, MNC Non-life Insurance Company</a
-              >
-            </li>
-            <li>
-              <a href=""
-                >RETAIL HEAD (REGIONAL), MNC Non-life Insurance Company</a
-              >
-            </li>
-            <li>
-              <a href=""
-                >CLUSTER HEAD (REGIONAL), MNC Non-life Insurance Company</a
-              >
-            </li>
-            <li>
-              <a href="">BRANCH MANAGER, MNC Non-life Insurance Company</a>
-            </li>
-            <li>
-              <a href="">UNIT SALES MANAGER, MNC Non-life Insurance Company</a>
-            </li>
-          </ul>
           <a
-            class="btn-small blue-grey white-text"
-            href="/views/my_biodata.html"
-            >My Biodata</a
+            class="btn-small mb-2 light-blue"
+            href="/views/projects.html"
+            >Projects</a
           >
-        </div>
-        <!-- Credentials mark-up -->
-        <div id="credentials" class="col s12">
-          <ul>
-            <li>
-              <a href=""
-                >Strategy Consulting - Indian Institute of Management, Bangalore
-                (IIMB)</a
-              >
-            </li>
-            <li><a href="">Design Thinking Certification - IDEO</a></li>
-            <li><a href="">Service Design - Udemy</a></li>
-            <li>
-              <a href=""
-                >User Research Certification - Interaction Design Foundation
-                (IDF)</a
-              >
-            </li>
-            <li>
-              <a href=""
-                >User Experience Fundamentals - Interaction Design Foundation
-                (IDF)</a
-              >
-            </li>
-            <li><a href="">Flutter + Dart - Udemy</a></li>
-            <li><a href="">JavaScript - Udemy</a></li>
-            <li><a href="">Web Design - FreeCodeCamp</a></li>
-            <li>
-              <a href=""
-                >Cert SCI (General Insurance) - Singapore College of Insurance
-                (SCI)</a
-              >
-            </li>
-            <li>
-              <a href=""
-                >Cert SCI (Health Insurance) - Singapore College of Insurance
-                (SCI)</a
-              >
-            </li>
-            <li>
-              <a href=""
-                >Cert SCI (Reinsurance) - Singapore College of Insurance
-                (SCI)</a
-              >
-            </li>
-            <li>
-              <a href=""
-                >Licentiate (Non-Life) - Insurance Institute of India (III)</a
-              >
-            </li>
-          </ul>
-          <a
-            class="btn-small blue-grey white-text"
-            href="/views/my_certifications.html"
-            >Certification</a
-          >
-        </div>
-        <div id="others" class="col s12">
-          <ul class="grey-text">
-            <li>
-              <a href=""
-                >Volunteer with the Willing Hearts Foundation, Singapore.
-              </a>
-            </li>
-            <li><a href="">A Hobbyist Musician, Singer. </a></li>
-            <li><a href="">Service Design - Udemy</a></li>
-          </ul>
-          <a class="btn-small blue-grey white-text" href="/index.html">Home</a>
         </div>
       </div>
+      <!-- Work-Ex mark-up -->
+      <div id="work-ex" class="col s12">
+        <p>
+          Over 10 years of corporate work experience around Management,
+          Business Development, Project Lead, Technology, and
+          People-management.
+        </p>
+        <ul>
+          <li>
+            Lead Retail, Bancassurance, and Corporate channels
+          </li>
+          <li>
+            Project Lead for developing IT platforms for online products distribution
+          </li>
+          <li>
+            Business Lead for Core system implementation and IT principles
+              to business
+          </li>
+          <li>
+            Operational Process improvement and SOP implementation
+          </li>
+          <li>
+            Lead teams, mentored, and managed their activities and
+              performance appraisals
+            
+          </li>
+          <li>
+            Channel-Head (Country), MNC Non-life Insurance Company
+            
+          </li>
+          <li>
+            National-Sales-Manager (NSM), MNC Non-life Insurance Company
+          </li>
+          <li>
+            Retail Head (Regional), MNC Non-life Insurance Company
+          </li>
+          <li>
+            Cluster-Head (Regional), MNC Non-life Insurance Company
+          </li>
+          <li>
+            Branch-Head (Profit Center), MNC Non-life Insurance Company
+          </li>
+          <li>
+            Unit-Sales-Manager, MNC Non-life Insurance Company
+          </li>
+        </ul>
+        <a
+          class="btn-small light-blue"
+          href="/views/biodata.html"
+          >Biodata</a
+        >
+      </div>
+      <!-- Credentials mark-up -->
+      <div id="credentials" class="col s12">
+        <ul>
+          <li>
+            Strategy Consulting - Indian Institute of Management, Bangalore (IIMB)
+          </li>
+          <li>Design Thinking Certification - IDEO</li>
+          <li>Service Design - Udemy</li>
+          <li>
+            User Research Certification - Interaction Design Foundation
+              (IDF)
+          </li>
+          <li>
+            User Experience Fundamentals - Interaction Design Foundation
+              (IDF)
+          </li>
+          <li>Flutter + Dart - Udemy</li>
+          <li>JavaScript - Udemy</li>
+          <li>Web Design - FreeCodeCamp</li>
+          <li>
+            Cert SCI (General Insurance) - Singapore College of Insurance
+              (SCI)
+          </li>
+          <li>
+            Cert SCI (Health Insurance) - Singapore College of Insurance
+              (SCI)
+          </li>
+          <li>
+            Cert SCI (Reinsurance) - Singapore College of Insurance
+              (SCI)
+          </li>
+          <li>
+            Licentiate (Non-Life) - Insurance Institute of India (III)
+          </li>
+        </ul>
+        <a
+          class="btn-small light-blue"
+          href="/views/certifications.html"
+          >Certification</a
+        >
+      </div>
+      <!-- Others mark-up -->
+      <div id="others" class="col s12">
+        <ul>
+          <li>A Hobbyist Musician, Singer.</li>
+          <li>Love Swimming</li>
+          <li>Enjoy watching movies</li>
+          <li>
+            Volunteering in social cause (Willing Hearts Foundation, Singapore)
+          </li>
+        </ul>
+        <a class="btn-small light-blue" href="/index.html"
+          >Home</a
+        >
+      </div>
     </div>
-    <!-- My Bio-Data TAB Section ENDS -->
 
     <!-- Footer STARTS -->
     <footer class="page-footer light-blue">

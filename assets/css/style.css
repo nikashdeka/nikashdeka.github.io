@@ -7,7 +7,11 @@
 .btn-small {
   background-color: #42a5f5;
 }
+.btn-small:hover{
+  background-color: #82bbe9;
+}
 
+/* TODO: */
 .skill-btn {
   margin: 8px;
 }
@@ -26,11 +30,27 @@
   width: 100%;
   background-color: rgba(146, 146, 146, 0.59);
 }
-
+.navbar-fixed {
+  background-color: #131415;
+}
+.navbar-fixed nav {
+  background-color: #131415;
+}
 .navbar-fixed .container {
   height: 60px;
+  background-color: #131415;
+}
+.sidenav {
+  background-color: #131415;
+  background-image: url("/assets/images/Nikash_sm_transparent_circle.png");
+  background-repeat: no-repeat;
+  background-size: 600px;
 }
 
+.sidenav h5,
+.sidenav h6 {
+  color: #868ca0;
+}
 .clear-float {
   clear: both;
 }
@@ -40,7 +60,7 @@
 }
 
 .carousel {
-  background-color: white;
+  background-color: #131415;
 }
 
 /* Carousel display window */
@@ -50,7 +70,6 @@
 
 .my-carousel-item {
   min-height: 310px;
-  /* min-width: fit-content; */
   min-width: 300px;
   border-radius: 2%;
 }
@@ -76,13 +95,12 @@
 .card-panel {
   width: 800;
   margin-top: -30px;
-  background-color: rgb(0, 0, 0);
-  background-color: white;
+  background-color: #131415;
+  border: 1px #868ca0 solid;
 }
 
 .card-title {
   margin: 4px 0;
-  color: red;
 }
 
 .card-sub-title {
@@ -177,7 +195,6 @@
   height: 1px;
   background-color: #455a643f;
   will-change: left, right;
-  /* color: blue; */
 }
 
 #tech-skills ul,
@@ -190,8 +207,13 @@
   color: #039be5;
 }
 
+.skills-container{
+  margin-top: 150px;
+}
+
 .skills-wrapper {
   position: relative;
+
 }
 #tech-skills .skill-icons {
   /* height: 170px; */
@@ -235,8 +257,8 @@
 
 /* SHOWCASE GRID CARD CSS STARTS  */
 .showcase-grid-cards {
-  height: auto;
-  background: rgb(2, 0, 36);
+  height: 250px;
+  background: #131415;
   background: linear-gradient(
     66deg,
     rgba(2, 0, 36, 1) 0%,
@@ -246,7 +268,15 @@
 }
 
 .showcase-grid-cards .card {
+  max-height: 250px;
   max-height: fit-content;
+  background-color: #131415;
+  border: 1px #868ca0 solid;
+  border-radius: 0 0 32% 0;
+}
+
+.showcase-grid-cards .card .card-action {
+  background-color: #868ca0;
 }
 
 .showcase-grid-cards .card .card-content {
@@ -273,6 +303,7 @@
 .showcase-grid-cards .h-image-grid img {
   width: 100%;
 }
+
 /* Image Grid Ends */
 
 /* SHOWCASE GRID CARD CSS ENDS  */
