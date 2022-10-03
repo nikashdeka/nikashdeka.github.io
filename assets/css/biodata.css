@@ -35,4 +35,16 @@
   padding: 16px;
 }
 
+.collapsible .collapsible-header{
+  background-color: #868CA0;
+}
+
+.collapsible .collapsible-header h5{
+  color: #131415;
+}
+
+.collapsible .collapsible-header i.fa::before{
+  color: white;
+}
+
 
