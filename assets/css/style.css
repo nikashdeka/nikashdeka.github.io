@@ -7,7 +7,7 @@
 .btn-small {
   background-color: #42a5f5;
 }
-.btn-small:hover{
+.btn-small:hover {
   background-color: #82bbe9;
 }
 
@@ -39,7 +39,7 @@
 
 .sidenav {
   background-color: #131415;
-  background-image: url("/assets/images/Nikash_sm_transparent_circle.png");
+  /* background-image: url("/assets/images/Nikash_sm_transparent_circle.png"); */
   background-repeat: no-repeat;
   background-size: 600px;
 }
@@ -204,13 +204,12 @@
   color: #039be5;
 }
 
-.skills-container{
+.skills-container {
   margin-top: 150px;
 }
 
 .skills-wrapper {
   position: relative;
-
 }
 #tech-skills .skill-icons {
   /* height: 170px; */
