@@ -300,6 +300,12 @@
   width: 100%;
 }
 
+.crevalpro-link-btn{
+  text-transform: lowercase;
+  font-size: medium;
+  vertical-align: middle;
+}
+
 /* Image Grid Ends */
 
 /* SHOWCASE GRID CARD CSS ENDS  */
